@@ -1,0 +1,99 @@
+body {
+    margin: auto;
+    border: 2px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-image: url(https://proyecto-sabana.vercel.app/assets/img/background.png)
+}
+
+.contentBox {
+    width: 670px;
+}
+
+/* Esto es la barra de navegación
+https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+/*
+
+}
+*/
+.menu:hover {
+    background-color: #000000;
+    font-size: 17px;
+    color: white;
+}
+
+.menu {
+
+    color: #000000;
+    font-size: 17px;
+
+}
+
+
+/* ajustes del encabezado */
+h1#laSabana {
+    color: white;
+    font-size: 27px;
+    position: relative;
+    text-align: left;
+    top: 14px;
+    left: 22px;
+    font-size: 27px;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header {
+    height: 325px;
+    border: 8px solid black;
+    background-image: url(https://proyecto-sabana.vercel.app/assets/img/mainImage.jpg);
+    position: relative;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif
+    
+}
+
+/* Bloque grande texto*/
+section {
+    background-image: url(https://proyecto-sabana.vercel.app/assets/img/contentBack.png);
+    border: 6px solid black;
+    background-repeat: repeat-x;
+    background-color: white;
+}
+
+/* bloques peques de texto */
+article {
+    font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+    display: inline-block;
+}
+
+/* para los ajustes tipográficos */
+p {
+    width: 600px;
+    line-height: 0.70cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+/*HECHO la cajita de la cita */
+blockquote {
+    padding: 15px;
+    margin: 10px;
+    border: 2px dotted rgb(200, 112, 2);
+    font-size: 13px;
+    border-width: 1px;
+    border-style: dashed;
+    border-image: initial;
+    background-image: url(https://proyecto-sabana.vercel.app/assets/img/blockquote.png);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+
+}
