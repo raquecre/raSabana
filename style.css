@@ -1,33 +1,70 @@
+* {
+    font-family: 'Times New Roman', Times, serif
+}
+
 body {
-    margin: auto;
     border: 2px;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-image: url(https://proyecto-sabana.vercel.app/assets/img/background.png)
+    background: linear-gradient(#BC5102, #EC8700 5%, #BC5102, #25060b 60%);
+    display: flex;
+    justify-content: center;
+    text-align: justify;
 }
 
 .contentBox {
     width: 670px;
-}
-
-/* Esto es la barra de navegación
-https://www.w3schools.com/howto/howto_js_topnav.asp*/
-
-/*
 
 }
-*/
+
+/* barra de navegación*/
+nav {
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+a.menu {
+    color: rgba(22, 22, 22, 0.397);
+    font-size: 17px;
+    height: 5px;
+    text-decoration: none;
+    width: 110px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .menu:hover {
     background-color: #000000;
-    font-size: 17px;
     color: white;
+    text-decoration: none;
+    box-shadow: 4.8px 4.8px 7px black;
+
 }
 
-.menu {
+/* línea negra del fondo */
+nav::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 7px;
+    background-color: black;
+    z-index: -1;
 
-    color: #000000;
-    font-size: 17px;
+}
 
+nav::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height: 7px;
+    background-color: black;
+    z-index: -1;
 }
 
 
@@ -35,65 +72,86 @@ https://www.w3schools.com/howto/howto_js_topnav.asp*/
 h1#laSabana {
     color: white;
     font-size: 27px;
-    position: relative;
     text-align: left;
     top: 14px;
     left: 22px;
     font-size: 27px;
     color: #FFFFFF;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin-bottom: 0px;
+
+}
+
+p.SublaSabana {
+    margin: 0px 15px;
+
 
 }
 
 header {
     height: 325px;
-    border: 8px solid black;
+    border: 10px solid black;
     background-image: url(https://proyecto-sabana.vercel.app/assets/img/mainImage.jpg);
-    position: relative;
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif
-    
+    margin-block-end: 15px;
+
 }
 
 /* Bloque grande texto*/
 section {
-    background-image: url(https://proyecto-sabana.vercel.app/assets/img/contentBack.png);
-    border: 6px solid black;
-    background-repeat: repeat-x;
-    background-color: white;
+    background: linear-gradient(#FFEAD5 5%, rgb(255, 255, 255));
+    border: 10px solid black;
 }
 
-/* bloques peques de texto */
-article {
-    font-family: "Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
-    display: inline-block;
+/*ajustes tx */
+h1 {
+    font-size: 25px;
+    margin: 13px;
+
 }
 
-/* para los ajustes tipográficos */
 p {
-    width: 600px;
     line-height: 0.70cm;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
+    margin: 13px;
+
 }
 
-/*HECHO la cajita de la cita */
+p a {
+    color: #C87002;
+    text-decoration: none;
+}
+
+p a:hover {
+    border-bottom: 1px dotted #C87002;
+}
+
+/*la cajita de la cita */
 blockquote {
     padding: 15px;
     margin: 10px;
-    border: 2px dotted rgb(200, 112, 2);
+    border: 2.5px dotted rgb(200, 112, 2);
     font-size: 13px;
-    border-width: 1px;
-    border-style: dashed;
     border-image: initial;
     background-image: url(https://proyecto-sabana.vercel.app/assets/img/blockquote.png);
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+    width: 400px;
+    line-height: 25px;
+}
 
+/*Ajustes pie de página*/
+footer {
+    color: #C87002;
+    font-size: 9px;
+    text-align: center;
+}
+
+footer a {
+    color: #C87002;
+    text-decoration: none;
+}
+
+footer a:hover {
+    border-bottom: 1px dotted #C87002;
 }
